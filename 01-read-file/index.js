@@ -8,6 +8,6 @@ readStream.on('data', function (chunk) {
   console.log(chunk.toString());
 });
 
-// readStream.on('end', () => {
-//   readStream.close();
-// });
+readStream.on('end', () => {
+  readStream.close();
+});
